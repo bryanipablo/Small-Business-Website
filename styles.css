@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#options {
+    font-family: 'Secular One', sans-serif;
+}
+
+/*-------- home screen --------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: #0005;
+}
+
+nav .logo {
+    height: 80px;
+    float: left;
+    size: 100px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: azure;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background: #0007;
+    border-radius: 20px;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#0005, #0005), url(images/bckgrdimg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.back h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #Ffffff;
+    white-space: nowrap;
+    font-size: 65px;
+}
+
+.back p {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #Ffffff;
+    white-space: nowrap;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*-------- about section --------*/
+
+.about {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.about h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about p {
+    font-size: 25px;
+    line-height: 45px;
+    padding: 25px;
+    padding-top: 225px;
+    width: 45%;
+    float: left;
+    white-space: normal;
+}
+
+.about .pic img {
+    width: 45%;
+    max-height: 1000px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*-------- shop section --------*/
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.shop p {
+    padding-top: 6px;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.items {
+    float: left;
+    width: 32%;
+    padding: 10px;
+    box-sizing: content-box;
+    align-items: center;
+    text-align: center;
+}
+
+.items h4 {
+    font-weight: bold;
+}
+
+.items:hover {
+    background: #ffcccb;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.items img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*-------- contact section --------*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contactheader h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.contact .form {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form input, .contact .form textarea { 
+    width: 100%;
+    padding: 15px;
+    border: 1px solid lightgray;
+    outline: none;
+    margin: 13px 0px;
+}
+
+.contact .form input:focus, .contact .form textarea:focus { 
+    border: 1px solid black;
+}
+
+.contact .form input::placeholder  { 
+    color: lightgray;
+    font-size: 18px;
+}
+
+.contact .form textarea::placeholder { 
+    color: lightgray;
+    font-size: 18px;
+    height: 80%;
+}
+
+.contact .form a {
+    width: 982px;
+    padding: 16px 0;
+    text-decoration: none;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 13px 0px;
+}
+
+/*-------- address section --------*/
+
+.address {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px; 
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 120px;
+}
+.address h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.address p {
+    font-size: 25px;
+    line-height: 45px;
+    padding: 25px;
+    padding-top: 80px;
+    width: 45%;
+    float: left;
+    white-space: normal;
+    text-align: center;
+}
+
+/*-------- footer section --------*/
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 128px;
+    width: auto;
+    color: gray;
+    border-top: 1px solid #Dde1e2;
+} 
+
+.footerttext {
+    float: center;
+    text-align: center;
+    line-height: normal;
+}
