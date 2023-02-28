@@ -16,11 +16,6 @@ html {
 
 /*-------- home screen --------*/
 
-.home {
-    font-family: 'Secular One', sans-serif
-}
-
-
 nav {
     position: fixed;
     top: 0;
@@ -56,6 +51,7 @@ nav ul li a {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Secular One', sans-serif;
 }
 
 nav ul li a:hover {
@@ -69,6 +65,7 @@ nav ul li a:hover {
     background-image: linear-gradient(#0005, #0005), url(images/bckgrdimg.jpg);
     background-size: cover;
     background-position: center;
+    font-family: 'Secular One', sans-serif;
 }
 
 .back h1 {
